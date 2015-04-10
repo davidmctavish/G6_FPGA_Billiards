@@ -1,0 +1,61 @@
+#ifndef POSITION_LOCATOR_H
+#define POSITION_LOCATOR_H
+
+#define POS_LOC_IGNORE true
+
+#if !POS_LOC_IGNORE
+
+// check the bit 31 to see if the value is valid or not
+#define POSLOC_isValid(pos)		((pos & 0x80000000) && (pos != 0xffffffff))
+
+// constant, defines the number of fractional bits the position locator stores
+#define POSLOC_fractionalBits	5
+// Current precision in the physics module is 10 bits
+#define POSLOC_shiftRequired	(10 - POSLOC_fractionalBits)
+
+// Functions for getting the individual components
+#define POSLOC_getX(pos)		 ((pos & 0x0000ffff) << POSLOC_shiftRequired)
+#define POSLOC_getY(pos)		(((pos & 0x7fff0000) >> 16) << POSLOC_shiftRequired)
+
+// TODO: find the correct values for these parameters.
+// Defines where the top-left and bottom-right corners of the table will
+// 	appear on the camera.
+#define POSLOC_tableTop_X	(10  * NORMAL)
+#define POSLOC_tableTop_Y	(10  * NORMAL)
+#define POSLOC_tableBot_X	(630 * NORMAL)
+#define POSLOC_tableBot_Y	(470 * NORMAL)
+
+// Define the scale factor to convert to table space from camera space
+// 	Note: (SOUTH_WALL-NORTH_WALL) will be a negative value.
+// The values will be just over 1. In order to prevent it from disappearing (from integer rounding),
+// 	the values are shifted up by five bits. When multipling by this number, the result must be
+// 	shifted down by 5 bits again.
+
+
+#define POSLOC_tableScale_X	( ( (EAST_WALL - WEST_WALL) << POSLOC_shiftRequired) / (POSLOC_tableBot_X - POSLOC_tableTop_X) )
+#define POSLOC_tableScale_Y	( (-(SOUTH_WALL-NORTH_WALL) << POSLOC_shiftRequired) / (POSLOC_tableBot_Y - POSLOC_tableTop_Y))
+
+#if FPGA
+volatile unsigned int *sevensegs = (unsigned int*) XPAR_AXI_TO_7SEGDISPLAY_0_S00_AXI_BASEADDR;
+volatile unsigned int *position_locator = (unsigned int*) XPAR_POSITION_LOCATOR_0_S00_AXI_BASEADDR;
+#endif
+
+
+// Configure the tolerances of the position locator
+void initPositionLocator();
+
+// Poll the position locator until a new (valid) value is read (with the button pushed down)
+unsigned int pollPositionLocator();
+
+// determine if the polled position is over the actual table.
+// The co-odinates have table precision(ie. 10 bit shift), but are still in camera space
+bool positionIsOnTable(int pos_x, int pos_y);
+
+// Will convert the x and y coordinates to table space (from camera space.
+// 	(Assumes the position is actually on the table.)
+void convertCameraCordinateToTable(int *x, int *y);
+
+#endif  // POS_LOC_IGNORE
+
+#endif  // POSITION_LOCATOR_H
+

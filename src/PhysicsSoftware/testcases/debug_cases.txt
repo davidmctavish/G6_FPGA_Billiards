@@ -1,0 +1,8 @@
+Breaking from the back with 7 balls. The 4th ball dissappears
+450		230		2	0
+550		250		0	0
+520		235		0	0
+520		265		0	0
+490		250		0	0
+490		220		0	0
+490		280		0	0

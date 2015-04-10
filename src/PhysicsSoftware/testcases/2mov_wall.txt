@@ -1,0 +1,5 @@
+52		52		0		-1
+52		20		0		1		
+
+Head on collision.
+Ball 2 moves down, hits South wall.

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Fri Apr 10 12:33:36 2015
+# Process ID: 6304
+# Log file: C:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/vivado.log
+# Journal file: C:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\billiards\PositionLocatorTest\PositionLocatorTest_2014_1\PositionLocatorTest_2014_1.xpr}
+reset_project

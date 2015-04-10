@@ -1,0 +1,218 @@
+#include <stdio.h>
+//#include "platform.h"
+
+//#include "xparameters.h"
+#ifndef XPARAMETERS_H
+#define XPARAMETERS_H
+#include "xparameters.h"
+#endif
+
+#include "physics.hpp"
+#include "TFT.hpp"
+//#include "position_locator.hpp"
+
+#define TEST_FRAMES   600
+#define BLUE 0x000000FC
+
+//#define NOT_AS_BRIGHT_GREEN 0x00008000
+#define NOT_AS_BRIGHT_GREEN 0x00000080
+
+#define CYAN 0x0000FCFC
+#define WHITE 0x00FCFCFC
+#define BLACK 0x00000000
+#define XPAR_MIG_7SERIES_0_BASEADDR_ALT (XPAR_MIG_7SERIES_0_BASEADDR + 0x04000000)
+#define TFT_MASK 0x00000001
+
+volatile unsigned int * tftptr = (unsigned int*) XPAR_AXI_TFT_0_BASEADDR;
+volatile unsigned int * memptr = (unsigned int*) XPAR_MIG_7SERIES_0_BASEADDR;
+volatile unsigned int * memptr_alt = (unsigned int*) XPAR_MIG_7SERIES_0_BASEADDR_ALT;
+int tft_array_x [NUM_BALLS][2] = {0};
+int tft_array_y [NUM_BALLS][2] = {0};
+
+void init_tft () {
+    tftptr[0] = (unsigned int) memptr_alt;
+    tftptr[1] = 0x00000001;
+}
+
+void DrawBackground ()
+{
+	DrawRectangle (0, 0, 640, 480);
+	memptr = (unsigned int*) XPAR_MIG_7SERIES_0_BASEADDR_ALT;
+	DrawRectangle (0, 0, 640, 480);
+	memptr = (unsigned int*) XPAR_MIG_7SERIES_0_BASEADDR;
+}
+
+void DrawRectangle (int xstart, int ystart, int width, int height)
+{
+
+
+    int x,y;
+    for (y = ystart; y < (ystart + height); y++) {
+        for (x = xstart; x < (xstart + width); x++) {
+            memptr[(1024*y) + (x)] = NOT_AS_BRIGHT_GREEN;
+        }
+    }
+}
+
+void DrawCircle(int x0, int y0, int radius, int colour)
+{
+  int x = radius;
+  int y = 0;
+  int radiusError = 1-x;
+
+  while(x >= y)
+  {
+	// Draw a line at height y (and -y) from -x to +x
+	int col = -x;
+	while (col <= x) {
+        if (colour == 0){
+        	memptr[x0+col + 1024*(y0+y)] = WHITE;
+        	memptr[x0+col + 1024*(y0-y)] = WHITE;
+        	memptr[x0+y + 1024*(y0+col)] = WHITE;
+        	memptr[x0-y + 1024*(y0-col)] = WHITE;
+	}
+		else if (colour == 1) {
+			memptr[x0+col + 1024*(y0+y)] = BLUE;
+			memptr[x0+col + 1024*(y0-y)] = BLUE;
+			memptr[x0+y + 1024*(y0+col)] = BLUE;
+			memptr[x0-y + 1024*(y0-col)] = BLUE;
+		}
+        else if (colour == 2){
+        	memptr[x0+col + 1024*(y0+y)] = CYAN;
+        	memptr[x0+col + 1024*(y0-y)] = CYAN;
+        	memptr[x0+y + 1024*(y0+col)] = CYAN;
+        	memptr[x0-y + 1024*(y0-col)] = CYAN;
+        }
+        else {
+        	memptr[x0+col + 1024*(y0+y)] = NOT_AS_BRIGHT_GREEN;
+        	memptr[x0+col + 1024*(y0-y)] = NOT_AS_BRIGHT_GREEN;
+        	memptr[x0+y + 1024*(y0+col)] = NOT_AS_BRIGHT_GREEN;
+        	memptr[x0-y + 1024*(y0-col)] = NOT_AS_BRIGHT_GREEN;
+        }
+		col++;
+	}
+
+    /*memptr[(x + x0) + 1024*(y + y0)] = 0x0000FCFC;
+    memptr[(y + x0) + 1024*(x + y0)] = 0x0000FCFC;
+    memptr[(-x + x0) + 1024*(y + y0)] = 0x0000FCFC;
+    memptr[(-y + x0) + 1024*(x + y0)] = 0x0000FCFC;
+    memptr[(-x + x0) + 1024*(-y + y0)] = 0x0000FCFC;
+    memptr[(-y + x0) + 1024*(-x + y0)] = 0x0000FCFC;
+    memptr[(x + x0) + 1024*(-y + y0)] = 0x0000FCFC;
+    memptr[(y + x0) + 1024*(-x + y0)] = 0x0000FCFC;*/
+    y++;
+    if (radiusError<0)
+    {
+      radiusError += 2 * y + 1;
+    }
+    else
+    {
+      x--;
+      radiusError += 2 * (y - x) + 1;
+    }
+  }
+}
+
+void DrawState (GameState *g){
+
+
+	volatile unsigned int * memptr_swp;
+	unsigned int status;
+	int i, x_center, y_center;
+    int east_wall;
+    east_wall = ((EAST_WALL) >> 10);
+    int north_wall;
+    north_wall = ((NORTH_WALL) >> 10);
+    int west_wall, south_wall;
+    west_wall = ((WEST_WALL) >> 10);
+    south_wall = ((SOUTH_WALL) >> 10);
+    //DrawRectangle(west_wall, south_wall, east_wall, north_wall);
+    //DrawRectangle (0, 0, 640, 480);
+    //loop through NUM_BALLS
+    //Check if ball exists
+    for (i = 0; i < NUM_BALLS; i++) {
+    	DrawCircle(tft_array_x[i][1], tft_array_y[i][1], (RADIUS >> 10), 3);
+    }
+    for (i = 0; i < NUM_BALLS; i++) {
+        if (g->ball[i]->exist) {
+            x_center = ((g->ball[i]->pos_x) >> 10);
+            y_center = ((g->ball[i]->pos_y) >> 10);
+            tft_array_x[i][1] = tft_array_x[i][0];
+            tft_array_x[i][0] = x_center;
+            tft_array_y[i][1] = tft_array_y[i][0];
+            tft_array_y[i][0] = y_center;
+            if ( g->ball[i]->colour == CUE) {
+                DrawCircle(x_center, y_center, (RADIUS >> 10), 0);
+            } else if ( g->ball[i]->colour == SOLIDS) {
+                DrawCircle(x_center, y_center, (RADIUS >> 10), 1);
+            } else {
+                DrawCircle(x_center, y_center, (RADIUS >> 10), 2);
+            }
+        }
+    }
+    memptr_swp = memptr;
+    memptr = memptr_alt;
+    memptr_alt = memptr_swp;
+    init_tft();
+    status = tftptr[2] & TFT_MASK;
+    while (status == 0) {
+    	status = tftptr[2] & TFT_MASK;
+    }
+}
+
+
+GameState *g = new GameState();
+
+// should probably make this the new main....
+void runSimulation(){
+  //int counter = 0;
+
+  while ( 1) {
+#if !FPGA
+    cout << "\nFrame " << counter << endl;
+#endif
+
+
+    Step(g);
+    DrawState(g);
+    // TODO: Chris should put draw function here.
+    // GameState object is a pointer, called g.
+    if (isEndTurn(*g)){
+#if !FPGA
+      cout << "Balls have stopped moving\n";
+#endif
+      break;
+    }
+    //counter++;
+  }
+}
+
+int main(){
+  init_tft();
+  initPositionLocator();
+  DrawBackground();
+  //DrawRectangle (0, 0, 640, 480);
+  initGameBalls(g);
+  initMoveList(g);
+  DrawState(g);
+  while(1) {
+    cuePollPosition(g->ball[0], g);
+    DrawCircle(10, 10, 100, 2);
+    runSimulation();
+    DrawState(g);
+    // OTHER GAME LOGIC HERE
+  }
+
+}
+
+/*int main()
+{
+    init_tft();
+	DrawRectangle (0, 0, 640, 480);
+	//drawRectangle (35, 35, 540, 380, 1);
+	DrawCircle (300, 300, 10, 1);
+	DrawCircle (100, 250, 10, 1);
+	DrawCircle (240, 330, 10, 1);
+
+    return 0;
+}*/

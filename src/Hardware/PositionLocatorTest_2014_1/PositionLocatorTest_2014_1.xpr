@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.1 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright (c) 2001-2013 Xilinx Inc, All rights reserved -->
+
+<Project Version="7" Minor="0" Path="C:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="4076285972fb470bbda76d32677dce54"/>
+    <Option Name="Part" Val="xc7a100tcsg324-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PositionLocatorTest/PositionLocatorTest.srcs/sources_1/bd/design_1/design_1.bd"/>
+          <Attr Name="ImportTime" Val="1424989375"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PositionLocatorTest/PositionLocatorTest.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1424316256"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_position_locator_0_0/design_1_position_locator_0_0.upgrade_log">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PositionLocatorTest/PositionLocatorTest.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/design_1_position_locator_0_0.upgrade_log"/>
+          <Attr Name="ImportTime" Val="1424316238"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.upgrade_log"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="design_1_wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../VivadoIP"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../vivadoip/ip_repo/poisition_locator_1.0"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../vivadoip/ip_repo/poisition_locator_1.0"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../vivadoip/ip_repo/poisition_locator_1.0"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/tb.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PositionLocatorTest/PositionLocatorTest.srcs/sim_1/new/tb.v"/>
+          <Attr Name="ImportTime" Val="1424317072"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../PositionLocatorTest/tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SimulationRunTime" Val="80000ns"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../PositionLocatorTest/tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="position_locator_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/position_locator_0">
+      <Config>
+        <Option Name="TopModule" Val="position_locator_0"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../../Users/David/Documents/multiplier_vivado_2014_2"/>
+        <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../users/david/documents/ece532/ip_repo/position_locator_0.1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+    </Run>
+    <Run Id="position_locator_0_synth_1" Type="Ft3:Synth" SrcSet="position_locator_0" Part="xc7a100tcsg324-1" ConstrsSet="position_locator_0" Description="Vivado Synthesis Defaults">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="position_locator_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="position_locator_0" Description="Vivado Implementation Defaults" SynthRun="position_locator_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
+</Project>

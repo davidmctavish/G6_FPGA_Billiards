@@ -1,0 +1,5 @@
+20		20		1		1
+50		50		-1		-1
+
+2 moving balls head on collision.
+Ball 0 gets pushed back into the bottom left pocket

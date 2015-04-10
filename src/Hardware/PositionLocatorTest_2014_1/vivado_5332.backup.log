@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2014.1 (64-bit)
+# SW Build 881834 on Fri Apr  4 14:15:54 MDT 2014
+# IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
+# Start of session at: Thu Feb 26 23:47:08 2015
+# Process ID: 12584
+# Log file: C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/vivado.log
+# Journal file: C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\David\Documents\ECE532\GitRepos\billiards\PositionLocatorTest\PositionLocatorTest_2014_1\PositionLocatorTest_2014_1.xpr}
+INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ip/position_locator_0/position_locator_0.upgrade_log'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ip/position_locator_1/position_locator_1.upgrade_log'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/multiplier_vivado_2014_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_microblaze_0_0 and its definition xilinx.com:ip:microblaze:9.3
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_dlmb_v10_0 and its definition xilinx.com:ip:lmb_v10:3.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_ilmb_v10_0 and its definition xilinx.com:ip:lmb_v10:3.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_dlmb_bram_if_cntlr_0 and its definition xilinx.com:ip:lmb_bram_if_cntlr:4.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_ilmb_bram_if_cntlr_0 and its definition xilinx.com:ip:lmb_bram_if_cntlr:4.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_lmb_bram_0 and its definition xilinx.com:ip:blk_mem_gen:8.2
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_mdm_1_0 and its definition xilinx.com:ip:mdm:3.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_clk_wiz_1_0 and its definition xilinx.com:ip:clk_wiz:5.1
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_rst_clk_wiz_1_100M_0 and its definition xilinx.com:ip:proc_sys_reset:5.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_fifo_generator_0_0 and its definition xilinx.com:ip:fifo_generator:12.0
+WARNING: [IP_Flow 19-3549] Detected incompatibility between IP design_1_microblaze_0_axi_periph_0 and its definition xilinx.com:ip:axi_interconnect:2.1
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 851.840 ; gain = 34.934
+remove_files {C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ip/position_locator_0/position_locator_0.upgrade_log C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ip/position_locator_1/position_locator_1.upgrade_log}
+open_bd_design {C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:microblaze:9.3 - microblaze_0
+Adding component instance block -- xilinx.com:ip:mdm:3.1 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:fifo_generator:12.0 - fifo_generator_0
+Adding component instance block -- xilinx.com:user:position_locator:0.1 - position_locator_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.2 - lmb_bram
+Successfully read diagram <design_1> from BD file <C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1034.594 ; gain = 173.148
+report_ip_status -name ip_status 
+current_bd_design design_1
+upgrade_bd_cells [get_bd_cells [list /microblaze_0_axi_periph /microblaze_0 /mdm_1 /clk_wiz_1 /microblaze_0_local_memory/dlmb_v10 /rst_clk_wiz_1_100M /microblaze_0_local_memory/lmb_bram /microblaze_0_local_memory/ilmb_v10 /microblaze_0_local_memory/dlmb_bram_if_cntlr /microblaze_0_local_memory/ilmb_bram_if_cntlr /fifo_generator_0 ] ]
+INFO: [IP_Flow 19-3422] Upgraded design_1_microblaze_0_axi_periph_0 (AXI Interconnect 2.1) from revision 3 to revision 2
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_microblaze_0_0 (MicroBlaze 9.3) from revision 1 to revision 0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_mdm_1_0 (MicroBlaze Debug Module (MDM) 3.1) from revision 1 to revision 0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_clk_wiz_1_0 (Clocking Wizard 5.1) from revision 3 to revision 2
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_dlmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 3
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_rst_clk_wiz_1_100M_0 (Processor System Reset 5.0) from revision 5 to revision 4
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_lmb_bram_0 (Block Memory Generator 8.2) from revision 1 to revision 0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_ilmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 3
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_dlmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 4 to revision 3
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_ilmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 4 to revision 3
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.upgrade_log'.
+INFO: [IP_Flow 19-3422] Upgraded design_1_fifo_generator_0_0 (FIFO Generator 12.0) from revision 1 to revision 0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.upgrade_log'.
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /fifo_generator_0_upgraded_Executing the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:12.0-5968] /fifo_generator_0_upgraded_Executing the post_config_ip from bd
+Wrote  : <C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd> 
+upgrade_bd_cells: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1077.738 ; gain = 43.145
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name {position_locator_v0_1_project} -directory {C:/Users/David/Documents/ECE532/ip_repo/position_locator_0.1/position_locator_v0_1_project} {c:/users/david/documents/ece532/ip_repo/position_locator_0.1/component.xml}
+INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1/position_locator_v0_1_project'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-12] File 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1/component.xml' cannot be added to the project because it already exists in the project, skipping this file
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/multiplier_vivado_2014_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/David/Documents/multiplier_vivado_2014_2' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/multiplier_vivado_2014_2'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.867 ; gain = 30.129
+ipx::update_ip_instances -delete_project true
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/multiplier_vivado_2014_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/david/documents/ece532/ip_repo/position_locator_0.1'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1162.609 ; gain = 0.000
+INFO: [IP_Flow 19-3422] Upgraded design_1_position_locator_0_0 (position_locator_v0.1 0.1) from revision 6 to revision 7
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/design_1_position_locator_0_0.upgrade_log'.
+Wrote  : <C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd> 
+ipx::update_ip_instances: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1162.609 ; gain = 0.000
+report_ip_status -name ip_status 
+set_property ip_repo_paths  c:/Users/David/Documents/multiplier_vivado_2014_2 [current_fileset]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/multiplier_vivado_2014_2'.
+set_property ip_repo_paths  {} [current_fileset]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property ip_repo_paths  C:/Users/David/Documents/ECE532/GitRepos/billiards/VivadoIP [current_fileset]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/ECE532/GitRepos/billiards/VivadoIP'.
+report_ip_status -name ip_status 
+current_bd_design design_1
+upgrade_bd_cells [get_bd_cells [list /position_locator_0 ] ]
+INFO: [IP_Flow 19-1972] Upgraded design_1_position_locator_0_0 from position_locator_v1.0 0.1 to position_locator_v1.0 1.0
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/design_1_position_locator_0_0.upgrade_log'.
+Wrote  : <C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd> 
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name {position_locator_v1_0_project} -directory {C:/Users/David/Documents/ECE532/GitRepos/billiards/VivadoIP/ip_repo/poisition_locator_1.0/position_locator_v1_0_project} {c:/Users/David/Documents/ECE532/GitRepos/billiards/VivadoIP/ip_repo/poisition_locator_1.0/component.xml}
+INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/david/documents/ece532/gitrepos/billiards/vivadoip/ip_repo/poisition_locator_1.0/position_locator_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/David/Documents/ECE532/GitRepos/billiards/VivadoIP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
+update_compile_order -fileset sim_1
+close_project
+generate_target all [get_files  C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd]
+Verilog Output written to : design_1.v
+Verilog Output written to : design_1_wrapper.v
+Wrote  : <C:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_microblaze_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_microblaze_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_microblaze_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_microblaze_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_microblaze_0_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'design_1_microblaze_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_microblaze_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_dlmb_v10_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_dlmb_v10_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_dlmb_v10_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_dlmb_v10_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_dlmb_v10_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_dlmb_v10_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_ilmb_v10_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_ilmb_v10_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_ilmb_v10_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_ilmb_v10_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_ilmb_v10_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_ilmb_v10_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_dlmb_bram_if_cntlr_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_dlmb_bram_if_cntlr_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_dlmb_bram_if_cntlr_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_dlmb_bram_if_cntlr_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_dlmb_bram_if_cntlr_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_dlmb_bram_if_cntlr_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_ilmb_bram_if_cntlr_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_ilmb_bram_if_cntlr_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_ilmb_bram_if_cntlr_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_ilmb_bram_if_cntlr_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_ilmb_bram_if_cntlr_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_ilmb_bram_if_cntlr_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_lmb_bram_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_lmb_bram_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_lmb_bram_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_lmb_bram_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'design_1_lmb_bram_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_lmb_bram_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_mdm_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_mdm_1_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_mdm_1_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_mdm_1_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_mdm_1_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_mdm_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_clk_wiz_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_clk_wiz_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_clk_wiz_1_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_clk_wiz_1_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_rst_clk_wiz_1_100M_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_rst_clk_wiz_1_100M_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_rst_clk_wiz_1_100M_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_rst_clk_wiz_1_100M_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_rst_clk_wiz_1_100M_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_rst_clk_wiz_1_100M_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_fifo_generator_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_fifo_generator_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_fifo_generator_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_fifo_generator_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'design_1_fifo_generator_0_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_fifo_generator_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_position_locator_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_position_locator_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_position_locator_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'design_1_position_locator_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_gen_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'div_gen_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'c:/Xilinx/Vivado/2014.1/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv_comp.vhd' to 'c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_viv_comp.vhd'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: c:/Users/David/Documents/ECE532/GitRepos/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_pkg.vhd
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block position_locator_0 
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1213.504 ; gain = 50.895
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+exec sebst V: /d
+couldn't execute "sebst": no such file or directory
+exec subst V: /d
+exec subst V: C:/Users/David/Documents/ECE532/GitRepos/billiards
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 26 23:52:06 2015...

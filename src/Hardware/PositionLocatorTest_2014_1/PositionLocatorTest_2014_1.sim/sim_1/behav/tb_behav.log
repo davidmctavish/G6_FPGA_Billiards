@@ -1,0 +1,83 @@
+Vivado Simulator 2014.1
+Time resolution is 1 ps
+Block Memory Generator module tb.dut.design_1_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Note: ****** INFORMATION ONLY ******
+C_A_WIDTH =               24
+C_A_FRACTION_WIDTH =      23
+C_RESULT_WIDTH =          31
+C_RESULT_FRACTION_WIDTH = 24
+Latency of core =         6
+Maximum latency of core = 6
+AXI interface latency =   0
+Output delay latency =    0
+Internal latency of core excluding handling AXI flow control = 6
+Time: 0 ps  Iteration: 0
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__311  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Note: ****** INFORMATION ONLY ******
+C_A_WIDTH =               24
+C_A_FRACTION_WIDTH =      23
+C_RESULT_WIDTH =          31
+C_RESULT_FRACTION_WIDTH = 24
+Latency of core =         6
+Maximum latency of core = 6
+AXI interface latency =   0
+Output delay latency =    0
+Internal latency of core excluding handling AXI flow control = 6
+Time: 0 ps  Iteration: 0
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__311  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd
+Warning: NUMERIC_STD.<: metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/microblaze_0/U0/MicroBlaze_Core_I/performance/Decode_I/PreFetch_Buffer_I1/using_fpga_buffers_mux/line__347  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/prefetch_buffer_gti.vhd
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 0 ps  Iteration: 0  Process: /tb/dut/design_1_i/microblaze_0/U0/MicroBlaze_Core_I/performance/Decode_I/PC_Module_I/using_fpga_buffers_mux/line__509  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_3/7b6e2d75/hdl/vhdl/pc_module_gti.vhd
+Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Time: 0 ps  Iteration: 0
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 2  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 2  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 3  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 3  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 3  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 3  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 10  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 10  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 10  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 10  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 375 ns  Iteration: 12  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 375 ns  Iteration: 12  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 375 ns  Iteration: 12  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(0)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 375 ns  Iteration: 12  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_fixed/i_fix_to_flt/i_fpo/fix_to_flt_op/spd/OP/NORM_SHIFT/\MUX_LOOP(1)\/REG  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/floating_point_v7_0/hdl/shared/shift_msb_first.vhd
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 385 ns  Iteration: 7  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__310  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 385 ns  Iteration: 7  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__310  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 385100 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_x/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__311  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd
+Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Time: 385100 ps  Iteration: 0  Process: /tb/dut/design_1_i/position_locator_0/inst/AvgFilter/divider_y/U0/i_synth/i_nonzero_fract/i_synth/opt_high_radix/i_nonzero_fract/i_high_radix/i_estimator/i_diag/line__311  File: c:/billiards/PositionLocatorTest/PositionLocatorTest_2014_1/PositionLocatorTest_2014_1.srcs/sources_1/bd/design_1/ip/design_1_position_locator_0_0/xil_defaultlib/src/div_gen_0/div_gen_v5_1/hdl/hrdiv/estimator.vhd

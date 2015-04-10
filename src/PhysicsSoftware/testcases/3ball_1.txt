@@ -1,0 +1,6 @@
+100			100			1		0
+130			115			0		0
+130			85			0		0
+
+Ball 0 travels and hits between Ball 1 and 2 simultaneously.
+

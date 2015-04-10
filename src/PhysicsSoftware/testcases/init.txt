@@ -1,0 +1,45 @@
+
+
+158720	235520	1024	0
+163840 	235520	0	0
+163840 	231424	0	0
+163840 	239616	0	0
+168960	233472	0	0
+168960	237568	0	0
+174080	235520	0	0
+
+
+227328	235520	-1024	0
+204800	235520	0	0
+182272	223232	0	0
+182272	247808	0	0
+
+
+206848	235520	-1024	0
+184320	225280	0	0
+184320	245760	0	0
+
+
+
+102400    102400    1024    0
+117760    102400    0    0
+133120    102400    -1024    0
+
+For 1 Moving, 1 Stationary Head On Collision
+	See: 1stat_head*.txt
+For 1 Moving, 1 Stationary Glancing Collision
+	See: 1stat_glance.txt
+For 2-Ball Moving Head on Collision
+	See: 2mov_head.txt
+For 2-Ball Moving Glancing Collisions
+	See: 2mov_glance.txt
+For wall collisions:
+	See: 2mov_wall.txt
+For scoring:
+	See: 2mov_score.txt
+For Multi-ball simultaneous collisions
+	See: 3ball_1.txt
+For Mutli-ball (stat ball in middle) simultaneous collisions
+	See: 3ball_2.txt
+
+Position X | Position Y | Speed X | Speed Y
